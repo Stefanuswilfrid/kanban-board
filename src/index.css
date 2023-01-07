@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--color-bg: 174 219 206;
+	--color-primary: 0 0 0;
+	--color-done: 74 222 128;
+	--color-done-secondary: 149 226 183;
+	--color-doing: 96 165 250;
+	--color-doing-secondary: 160 198 244;
+	--color-inreview: 250 250 51;
+	--color-inreview-secondary: 255 250 160;
+	--color-issues: 255 191 0;
+	--color-issues-secondary:250 200 152;
+	--color-undone: 148 163 184;
+	--color-undone-secondary: 186 197 211;
+	--color-board: 226 232 240;
+	--color-delete: 235 29 54;
+}
+
+@layer base {
+	body {
+		@apply bg-bg font-primary;
+	}
+
+	h1 {
+		@apply text-2xl font-bold;
+	}
+
+	p {
+		@apply text-sm;
+	}
+
+	.layout {
+		/* 1100px */
+		max-width: 80rem;
+		@apply mx-auto w-11/12;
+	}
+}
